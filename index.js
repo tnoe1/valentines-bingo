@@ -1,43 +1,38 @@
 let entries = [
-  // "Christmas Cookies",
   "Hero catches heroine",
-  // "Sassy hair dresser",
-  "Carolers",
-  "Small town feud",
   "Hero brushes hair back for heroine",
-  "Hot chocolate",
   "Best friend hits on someone",
-  // "Red cowboy boots",
   "First kiss",
-  "Awkward family dinner",
-  // "Sleigh ride",
-  "Snow",
-  // "Neighborhood gossip",
-  // "Hero is someone from childhood",
-  "Christmas tree decorating",
-  "Strange family Christmas tradition",
-  // "Mother gives sage advice",
-  // "Someone is slapped or punched",
+  "Playful slap",
   "Waking up with full makeup",
-  "Hero wears Henley shirt",
-  // "Cute old farm truck",
-  // "Horse is pre-saddled",
-  "Christmas wish",
-  "Mistletoe",
   "Dancing",
   "Toast",
-  "Fake Christmas Tree",
-  "Candy Canes",
   "Accidental Close Contact",
-  "Santa Cookie Jar",
   "Main Character Offends Quirky Best Friend",
-  "Christmas Cookies",
-  "Family Recipe",
   "Flirty Injury",
-  "Wrapping Presents",
-  "Motherly Advice",
-  "Stockings by a Chimney",
-  "City Girl Reference"
+  "City Girl Reference",
+  "Coy hand touching",
+  "Heart-shaped balloons",
+  "Chocolate",
+  "Ring",
+  "Childhood story",
+  "Reference to past boyfriends",
+  "Coy giggles",
+  "Smile complimented",
+  "\"Sometimes I get so busy that I forget to look up\"",
+  "Street vendors",
+  "Almost kiss",
+  "Strange cocktails",
+  "Fit girl eating high calorie food",
+  "Cupid reference",
+  "A busker is playing music",
+  "Misread signals",
+  "A sprint through crowded streets to declare love",
+  "Chemistry while cooking together",
+  "Stuck in traffic jam",
+  "Grumpy boss turned soft",
+  "Nostalgic diner",
+  "Pushy mother"
 ];
 
 let gridDim = 5;
@@ -121,8 +116,8 @@ const cardCreator = (width, height, cardEntries) => {
       box.style.gridArea = `${i+1} / ${j+1} / ${i+2} / ${j+2}`;
       box.style.borderLeftStyle = "solid";
       box.style.borderTopStyle = "solid";
-      box.style.color = "#386641";
-      box.style.backgroundColor = "#F2E8CF";
+      box.style.color = "#772222";
+      box.style.backgroundColor = "#FFAAAA";
       box.style.borderColor = "#BC4749";
 
       box.style.display = "flex";
@@ -146,7 +141,7 @@ const cardCreator = (width, height, cardEntries) => {
 
 
       if (inCenter(i, j, gridDim)) {
-        box.style.background = "#F2E8CF url(\"assets/better-star.svg\") no-repeat center";
+        box.style.background = "#FFAAAA url(\"assets/heart.svg\") no-repeat center";
         box.style.backgroundSize = "contain";
         beforeCenter = false;
       } else {
