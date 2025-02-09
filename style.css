@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Countryside";
+  src: url("assets/Countryside/Countryside-YdKj.ttf");
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1.5fr 6fr 1fr;
+  justify-content: center;
+  align-items: start;
+}
+
+.header {
+  align-self: end;
+  display: grid;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+.header p {
+  font-family: "Countryside", sans-serif;
+  font-size: 3rem;
+
+  color: #BC4749;
+}
+
+.card-container {
+  align-self: start;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.card {
+  display: grid;
+  margin-left: 30vw;
+  margin-right: 30vw;
+}
+
+.footer {
+  align-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-family: "Trebuchet MS";
+  gap: 6px;
+  margin-bottom: 2vh;
+}
+
+.copyright {
+  justify-self: end;
+}
+
+.github {
+  width: 1.5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    padding-left: 8vw;
+  }
+
+  .card {
+    display: grid;
+    margin-left: 6vw;
+    margin-right: 2vw;
+  }
+
+  .github {
+    width: 3%;
+  }
+}
+
+@media print {
+  .card {
+    display: grid;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+}
